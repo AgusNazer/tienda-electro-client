@@ -34,9 +34,9 @@ export default function Home() {
 
   // Categorías
   const categories = [
-    { name: "Notebooks", icon: "laptop", image: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=500" },
-    { name: "Computadoras", icon: "desktop", image: "https://images.unsplash.com/photo-1593640408182-31c2bd3f87d9?q=80&w=500" },
-    { name: "Monitores", icon: "tv", image: "https://images.unsplash.com/photo-1619953942547-233ebd5fbf60?q=80&w=500" },
+    { name: "Notebooks", icon: "laptop", image: "https://www.notebookcheck.org/fileadmin/Notebooks/Apple/MacBook_Air_13_M3_10C_GPU/IMG_2758.JPG" },
+    { name: "Computadoras", icon: "desktop", image: "https://www.infinit.com.uy/imgs/productos/productos3_19453.jpg" },
+    { name: "Monitores", icon: "tv", image: "https://image.benq.com/is/image/benqco/thumbnail-show-mac-colors?$ResponsivePreset$" },
     { name: "Periféricos", icon: "mouse", image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=500" }
   ];
 
@@ -143,9 +143,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-10">
             <h2 className="text-3xl font-bold">Productos Destacados</h2>
-            <Link to="/products" className="text-blue-600 hover:text-blue-800 font-semibold">
-              Ver Todos →
-            </Link>
+            <Link to="/all-products" className="text-blue-600 hover:text-blue-800 font-semibold">
+  Ver Todos →
+</Link>
+
           </div>
 
           {isLoading ? (
