@@ -13,21 +13,21 @@ export default function Home() {
       title: "Tecnología de Vanguardia",
       subtitle: "Descubre lo último en computadoras y notebooks",
       cta: "Ver Catálogo",
-      ctaLink: "/products",
+      ctaLink: "/all-products",
       image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200"
     },
     {
       title: "Accesorios Premium",
       subtitle: "Periféricos de alta gama para potenciar tu experiencia",
       cta: "Explorar",
-      ctaLink: "/products",
+      ctaLink: "/all-products",
       image: "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=1200"
     },
     {
       title: "Soluciones Profesionales",
       subtitle: "Equipos diseñados para máximo rendimiento",
       cta: "Comprar Ahora",
-      ctaLink: "/products",
+      ctaLink: "/all-products",
       image: "https://images.unsplash.com/photo-1591405351990-4726e331f141?q=80&w=1200"
     }
   ];
@@ -117,7 +117,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-12">Nuestras Categorías</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((category, index) => (
-            <Link to="/products" key={index} className="group">
+            <Link to="/all-products" key={index} className="group">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                 <div className="h-48 overflow-hidden">
                   <img 
@@ -175,7 +175,7 @@ export default function Home() {
                     <p className="text-gray-600 mb-2 line-clamp-2 h-12">{product.description}</p>
                     <div className="flex justify-between items-center">
                       <span className="text-xl font-bold text-blue-600">${product.price}</span>
-                      <Link to={`/products/${product.id}`}>
+                      <Link to={`/products/${product.idProduct}`}>
                         <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
                           Ver Detalles
                         </button>
@@ -230,7 +230,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Listo para mejorar tu tecnología?</h2>
           <p className="text-xl mb-8">Explora nuestra amplia selección de productos y encuentra exactamente lo que necesitas.</p>
-          <Link to="/products">
+          <Link to="/all-products">
             <button className="bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
               Ver Catálogo Completo
             </button>

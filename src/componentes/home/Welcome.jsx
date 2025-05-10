@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Welcome() {
   return (
     
     <div
@@ -27,7 +27,7 @@ export default function Home() {
         
         {/* Botón de llamada a la acción */}
         <div className="mt-6">
-          <Link to="/products">
+          <Link to="/all-products">
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
               Ver Productos
             </button>

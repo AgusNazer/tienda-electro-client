@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getAllCarts, getProductById } from '../services/Api'; // ajusta el path
+import ButtonBack from '../componentes/ButtonBack';
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -58,6 +59,7 @@ export default function Cart() {
       }}
     >
       <div className="w-full max-w-5xl mx-auto bg-white bg-opacity-70 backdrop-blur-md shadow-lg rounded-lg p-6">
+        <ButtonBack />
         <h1 className="text-3xl font-bold mb-6 text-center">Tu Carrito de Compras</h1>
 
         {cartItems.length === 0 ? (

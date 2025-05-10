@@ -13,17 +13,17 @@ export default function Navbar() {
                             : 'text-gray-700 hover:text-blue-500'
                     }
                 >
-                    Home
+                    Welcome
                 </NavLink>
                 <NavLink
-                    to="/products"
+                    to="/home"
                     className={({ isActive }) =>
                         isActive
                             ? 'text-blue-500 font-bold underline'
                             : 'text-gray-700 hover:text-blue-500'
                     }
                 >
-                    Products
+                    Home
                 </NavLink>
             </div>
 
