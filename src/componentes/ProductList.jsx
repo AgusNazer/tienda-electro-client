@@ -59,7 +59,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % banners.length);
-    }, 5000);
+    }, 4000);
     
     return () => clearInterval(interval);
   }, [banners.length]);
