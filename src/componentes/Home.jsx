@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { getAllProducts } from '../services/Api'; // Importando tu API existente
+import { getAllProducts } from '../services/Api';
+import Categoria from './Categorias';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -33,12 +34,12 @@ export default function Home() {
   ];
 
   // Categorías
-  const categories = [
-    { name: "Notebooks", icon: "laptop", image: "https://www.notebookcheck.org/fileadmin/Notebooks/Apple/MacBook_Air_13_M3_10C_GPU/IMG_2758.JPG" },
-    { name: "Computadoras", icon: "desktop", image: "https://www.infinit.com.uy/imgs/productos/productos3_19453.jpg" },
-    { name: "Monitores", icon: "tv", image: "https://image.benq.com/is/image/benqco/thumbnail-show-mac-colors?$ResponsivePreset$" },
-    { name: "Periféricos", icon: "mouse", image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=500" }
-  ];
+  // const categories = [
+  //   { name: "Notebooks", icon: "laptop", image: "https://www.notebookcheck.org/fileadmin/Notebooks/Apple/MacBook_Air_13_M3_10C_GPU/IMG_2758.JPG" },
+  //   { name: "Computadoras", icon: "desktop", image: "https://www.infinit.com.uy/imgs/productos/productos3_19453.jpg" },
+  //   { name: "Monitores", icon: "tv", image: "https://image.benq.com/is/image/benqco/thumbnail-show-mac-colors?$ResponsivePreset$" },
+  //   { name: "Periféricos", icon: "mouse", image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=500" }
+  // ];
 
   // Obtener productos destacados desde tu API
   useEffect(() => {
@@ -113,7 +114,7 @@ export default function Home() {
       </div>
 
       {/* Categories Section */}
-      <section className="py-16 px-4 max-w-7xl mx-auto">
+      {/* <section className="py-16 px-4 max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Nuestras Categorías</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((category, index) => (
@@ -136,7 +137,8 @@ export default function Home() {
             </Link>
           ))}
         </div>
-      </section>
+      </section> */}
+      <Categoria />
 
       {/* Featured Products Section */}
       <section className="py-16 bg-gray-100 px-4">

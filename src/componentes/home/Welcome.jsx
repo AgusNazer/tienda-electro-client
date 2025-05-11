@@ -27,9 +27,9 @@ export default function Welcome() {
         
         {/* Botón de llamada a la acción */}
         <div className="mt-6">
-          <Link to="/all-products">
+          <Link to="/home">
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
-              Ver Productos
+              Ingresar
             </button>
           </Link>
         </div>
