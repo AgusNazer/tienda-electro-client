@@ -226,7 +226,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-blue-600 text-white px-4">
+      <section className="py-16 bg-gray-300  px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Listo para mejorar tu tecnología?</h2>
           <p className="text-xl mb-8">Explora nuestra amplia selección de productos y encuentra exactamente lo que necesitas.</p>
