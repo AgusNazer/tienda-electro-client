@@ -2,7 +2,8 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-purple-800 via-violet-700 to-purple-800 text-white py-10">
+    <footer className="bg-gradient-to-r from-purple-800 via-violet-70 to-purple-500 text-white py-10">
+      {/* <footer className="bg-[rgba(128,0,128,0.5)] text-white py-10"> */}
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         
         {/* Redes sociales */}

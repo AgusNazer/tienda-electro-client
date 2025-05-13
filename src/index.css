@@ -16,6 +16,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+} */
+ footer {
+  margin-top: auto; /* Empuja el footer hacia la parte inferior */
+  width: 100%; /* Asegura que el footer sea ancho */
+  /* ... otros estilos de tu footer ... */
+}
 
 a {
   font-weight: 500;
