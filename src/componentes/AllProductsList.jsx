@@ -45,7 +45,7 @@ export default function AllProductsList() {
   ) : (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       {products.map(product => (
-        <div key={product.id} className="bg-white bg-opacity-90 rounded-lg shadow-md overflow-hidden">
+        <div key={product.idProduct} className="bg-white bg-opacity-90 rounded-lg shadow-md overflow-hidden">
           <div className="h-48 bg-gray-300 flex items-center justify-center">
             {product.imageUrl ? (
               <img 

@@ -12,20 +12,20 @@ import CategoryProducts from './componentes/CategoryProducts';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Welcome />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/all-products" element={<AllProductsList />} />
-        <Route path="/products/:id" element={<ProductDetail />} />
-        <Route path="/category/:categoryName" element={<CategoryProducts />} />
-
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
-      <Footer/>
-    </div>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/all-products" element={<AllProductsList />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/category/:categoryName" element={<CategoryProducts />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+        <Footer />
+      </div>
   );
 }
 
 export default App;
+

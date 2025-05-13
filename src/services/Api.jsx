@@ -48,6 +48,7 @@ export async function decreaseStock(productId, quantity) {
     if (!res.ok) throw new Error(`Failed to decrease stock for product ${productId}`);
     return res.text();
 }
+
 // ---------------------------------------------------------------------------------------------------------
 //CART uris
 
@@ -56,3 +57,21 @@ export async function getAllCarts() {
     if (!res.ok) throw new Error('Failed to fetch carts');
     return res.json();
 }
+
+export const addToCart = async (cartId, productId, quantity, priceAtTime) => {
+  // Verificación de tipos y valores
+  console.log("Tipo de productId:", typeof productId);
+  console.log("Valor de productId:", productId);
+  
+  if (!productId) {
+    throw new Error("ID de producto es nulo o indefinido");
+  }
+  
+  const body = { productId, quantity, priceAtTime };
+  console.log("Enviando al backend:", body);
+  console.log("Request body:", JSON.stringify(body, null, 2));
+
+  // Resto de tu código...
+};
+// ---------------------------------------------------------------------------------------------------------
+//SALES uris

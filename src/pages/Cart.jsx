@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { getAllCarts, getProductById } from '../services/Api'; // ajusta el path
 import ButtonBack from '../componentes/ButtonBack';
 
@@ -49,6 +49,7 @@ export default function Cart() {
   if (loading) {
     return <div className="min-h-screen flex items-center justify-center text-xl">Cargando carrito...</div>;
   }
+  
 
   return (
     <div
