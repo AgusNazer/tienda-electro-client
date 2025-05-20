@@ -1,5 +1,11 @@
-const BASE_URL_PRODUCTS = 'http://localhost:8769/products';
-const BASE_URL_CART = 'http://localhost:8763/api/carts';
+// const BASE_URL_PRODUCTS = 'http://localhost:8769/products';
+// const BASE_URL_PRODUCTS = 'https://product-microservicio-electro.onrender.com/products';
+
+// const BASE_URL_CART = 'http://localhost:8763/api/carts';
+
+const BASE_URL_PRODUCTS = import.meta.env.VITE_BASE_URL_PRODUCTS;
+const BASE_URL_CART = import.meta.env.VITE_BASE_URL_CART;
+
 
 export async function getAllProducts() {
     const res = await fetch(BASE_URL_PRODUCTS);
